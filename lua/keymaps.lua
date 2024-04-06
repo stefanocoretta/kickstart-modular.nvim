@@ -37,8 +37,9 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- [[ Custom Keymaps ]]
 
 vim.keymap.set('n', ';', '<cmd>FineCmdline<cr>', { desc = 'Fine CMD line' })
-vim.keymap.set('n', '<leader>qq', '<cmd>q<cr>', { desc = '[Q]uit' })
+vim.keymap.set('n', '<leader>q', '<cmd>q<cr>', { desc = '[Q]uit' })
 vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>', { desc = 'Open Neo[t]ree' })
+vim.keymap.set('n', '<leader>g', '<cmd>Neogit<cr>', { desc = 'Neo[g]it' })
 
 -- [[ Basic Autocommands ]]
 --  See `:help lua-guide-autocommands`
