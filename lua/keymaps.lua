@@ -4,7 +4,7 @@ vim.keymap.set('n', ';', '<cmd>FineCmdline<cr>', { desc = 'Fine CMD line' })
 vim.keymap.set('n', '<leader>q', '<cmd>q<cr>', { desc = '[Q]uit' })
 vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>', { desc = 'Open Neo[T]ree' })
 vim.keymap.set('n', '<leader>g', '<cmd>Neogit<cr>', { desc = 'Neo[G]it' })
-vim.keymap.set('n', '<leader>sp', '<cmd>CdProject', { desc = 'Go to Project' })
+vim.keymap.set('n', '<leader>sp', '<cmd>CdProject<cr>', { desc = 'Go to Project' })
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
