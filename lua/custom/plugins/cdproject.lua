@@ -14,7 +14,7 @@ return {
       hooks = {
         {
           callback = function(dir)
-            vim.notify('switched to dir: ' .. dir)
+            vim.notify('🟢 ' .. dir)
           end,
         },
         {
@@ -24,7 +24,7 @@ return {
         },
         {
           callback = function(dir)
-            vim.notify('switched to dir: ' .. dir)
+            vim.notify('🟢 ' .. dir)
           end, -- required, action when trigger the hook
           name = 'cd hint', -- optional
           order = 1, -- optional, the exection order if there're multiple hooks to be trigger at one point
