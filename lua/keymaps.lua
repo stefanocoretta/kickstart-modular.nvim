@@ -6,6 +6,8 @@ vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>', { desc = 'Open Neo[T
 vim.keymap.set('n', '<leader>g', '<cmd>Neogit<cr>', { desc = 'Neo[G]it' })
 vim.keymap.set('n', '<leader>sp', '<cmd>CdProject<cr>', { desc = 'Go to Project' })
 
+vim.keymap.set({ 'n', 'i' }, '<m-i>', '<esc>i```{r}<cr>```<esc>O', { desc = '[I]nsert R code chunk' })
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
