@@ -17,23 +17,23 @@ return {
             vim.notify('🟢 ' .. dir)
           end,
         },
-        {
-          callback = function(_)
-            vim.cmd 'Telescope find_files'
-          end,
-        },
-        {
-          callback = function(dir)
-            vim.notify('🟢 ' .. dir)
-          end, -- required, action when trigger the hook
-          name = 'cd hint', -- optional
-          order = 1, -- optional, the exection order if there're multiple hooks to be trigger at one point
-          pattern = 'cd-project.nvim', -- optional, trigger hook if contains pattern
-          trigger_point = 'DISABLE', -- optional, enum of trigger_points, default to `AFTER_CD`
-          match_rule = function(dir) -- optional, a function return bool. if have this fields, then pattern will be ignored
-            return true
-          end,
-        },
+        --   {
+        --     callback = function(_)
+        --       vim.cmd 'Telescope find_files'
+        --     end,
+        --   },
+        --   {
+        --     callback = function(dir)
+        --       vim.notify('🟢 ' .. dir)
+        --     end, -- required, action when trigger the hook
+        --     name = 'cd hint', -- optional
+        --     order = 1, -- optional, the exection order if there're multiple hooks to be trigger at one point
+        --     pattern = 'cd-project.nvim', -- optional, trigger hook if contains pattern
+        --     trigger_point = 'DISABLE', -- optional, enum of trigger_points, default to `AFTER_CD`
+        --     match_rule = function(dir) -- optional, a function return bool. if have this fields, then pattern will be ignored
+        --       return true
+        --     end,
+        --   },
       },
     }
   end,
