@@ -40,6 +40,7 @@ return {
         ['<leader>nW'] = { '<cmd>wq<cr>', '[W]rite and quit' },
 
         ['<leader>cr'] = { '<cmd>vsplit term://R<cr>', 'New [r] terminal' },
+        ['<m-cr>'] = { '<cmd>call slime#send_cell()<cr>', 'Send cell' },
       }
     end,
   },
