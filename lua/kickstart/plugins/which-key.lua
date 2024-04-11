@@ -39,7 +39,7 @@ return {
         ['<leader>nw'] = { '<cmd>w<cr>', '[w]rite' },
         ['<leader>nW'] = { '<cmd>wq<cr>', '[W]rite and quit' },
 
-        ['<leader>cr'] = { '<cmd>split term://radian<cr>', 'New [r]adian terminal' },
+        ['<leader>cr'] = { '<cmd>vsplit term://R<cr>', 'New [r] terminal' },
       }
     end,
   },
