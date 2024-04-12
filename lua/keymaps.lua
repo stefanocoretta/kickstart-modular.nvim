@@ -3,7 +3,6 @@
 vim.keymap.set('n', ';', '<cmd>FineCmdline<cr>', { desc = 'Fine CMD line' })
 vim.keymap.set('n', '<leader>t', '<cmd>Neotree toggle<cr>', { desc = 'Open Neo[t]ree' })
 vim.keymap.set('n', '<leader>g', '<cmd>Neogit<cr>', { desc = 'Neo[g]it' })
-vim.keymap.set('n', '<leader>p', '<cmd>CdProject<cr>', { desc = 'Go to Project' })
 
 vim.keymap.set({ 'n', 'i' }, '<m-i>', '<esc>i```{r}<cr>```<esc>O', { desc = '[I]nsert R code chunk' })
 
