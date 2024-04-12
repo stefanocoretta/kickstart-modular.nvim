@@ -9,6 +9,10 @@ vim.opt.foldlevel = 99 -- Using ufo provider need a large value, feel free to de
 vim.opt.foldlevelstart = 99
 vim.opt.foldenable = true
 
+vim.api.nvim_command 'autocmd TermOpen * startinsert' -- starts in insert mode
+vim.api.nvim_command 'autocmd TermOpen * setlocal nonumber' -- no numbers
+vim.api.nvim_command 'autocmd TermEnter * setlocal signcolumn=no' -- no sign column
+
 -- set default width
 vim.opt.shiftwidth = 2
 
