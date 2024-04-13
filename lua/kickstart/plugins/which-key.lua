@@ -39,7 +39,8 @@ return {
         ['<leader>nw'] = { '<cmd>w<cr>', '[w]rite' },
         ['<leader>nW'] = { '<cmd>wq<cr>', '[W]rite and quit' },
 
-        ['<leader>cr'] = { '<cmd>vsplit term://R<cr>', 'New [r] terminal' },
+        -- ['<leader>cr'] = { '<cmd>vsplit term://R<cr>', 'New [r] terminal' },
+        ['<leader>cr'] = { "<cmd>lua require('r.run').start_R('R')<cr>", 'New [r] terminal' },
         ['<m-cr>'] = { '<cmd>call slime#send_cell()<cr>', 'Send cell' },
       }
     end,
